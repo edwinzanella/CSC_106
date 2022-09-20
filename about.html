@@ -5,15 +5,22 @@
 <title>Edwin's Programming Portfolio</title>
 </head>
   <style>
-    body{background-color: yellow;
+    .background{position:absolute;
+    z-index: 0;}
+    body{background-color: yellowgreen;
       width: 800px;}
     #top-buttons{background-color: blue;
     margin:auto;}
     .top-buttons{margin-right: 50px}
     #home{margin-left:125px;}
     #about{margin-right:105px;}
+    #body{position: relative;
+    z-index: 1;}
+    .text{color:blueviolet;}
   </style>
 <body>
+    <img src="myBackground.jpg" class="background">
+    <div id="body">
   <img src="myBanner.jpg">
   <table id="top-buttons">
     <thead>
@@ -41,7 +48,10 @@
       </tr>
     </thead>
   </table>
+  <div class="text">
   <h1>About Me</h1>
   <p>My name is Edwin Hernandez-Zanella and I am a computer science major at the University of Rhode Island. I am enrolled in CS 106 and this page how I will test out and learn coding. I plan on graduated from University of Rhode Island with a Master's in Computer Science through the accerlated Master's degree program. After college, I plan on either becoming a software enginner or software developer. A few of my interests involve music, chess, and video games. I've been playing guitar for over two years, and I am joining clubs to help me find other people who have an interest in music.</p>
+  </div>
+  </div>
 </body>
 </html>
